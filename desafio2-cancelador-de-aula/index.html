@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title>Cancelador de Aulas</title>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <span>Hora</span>
+        <input id="nowTime" class="timeInput" type="time" step="2" />
+      </div>
+      <div>
+        <span>Início da aula</span>
+        <input id="classTime" class="timeInput" type="time" value="" />
+      </div>
+
+      <div>
+        <span>Limite de alunos atrasados</span>
+        <input
+          id="studentsInput"
+          type="number"
+          class=""
+          placeholder="Limite de Alunos Atrasados"
+        />
+      </div>
+      <div class="buttons">
+        <button id="registerButton" class="registerButton" onclick="register()">
+          REGISTRAR CHEGADA
+        </button>
+        <button onclick="clearForm()" class="clearButton">LIMPAR</button>
+      </div>
+      <div id="studentsCounterSpan" class="counter">
+        Sem alunos presentes no momento
+      </div>
+      <div id="lateStudentsCounterSpan" class="counter">
+        Sem alunos atrasados no momento
+      </div>
+    </main>
+    <div id="message" class="message">Atenção: A aula iniciou</div>
+    <div id="cancelMessage" class="cancelMessage"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

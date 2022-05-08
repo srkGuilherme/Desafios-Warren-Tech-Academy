@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+    <title>Algoritmo</title>
+</head>
+
+<body>
+    <header>
+        <h1>ALGORITMO</h1>
+
+    </header>
+    <section class="explicacao">
+        <div>Calcule os números onde a soma de um número n + o seu reverso resultam em números ímpares</div>
+        <div>Exemplo: 36 + 63 = 99 e 409 + 904 = 1313</div>
+        <br>
+        <div>Digite um número e será apresentado na tela os números com as propriedades citadas acima</div>
+        <br>
+        <div>Atenção: O valor máximo a ser exibido na lista não irá ultrapassar 1 milhão</div>
+    </section>
+    <main>
+        <span id="alertaId" class="alerta">"Digite um valor válido e acima de 0"</span>
+        <!--         <span id="alertaNumero" class="alerta">"Atenção: Valores acima de 10 mil podem levar até 20 segundos
+            para serem
+            calculados e será necessário uma grande quantidade de processamento"</span>
+ -->
+        <div class="inputs">
+            <input id="input" class="numberInput" type="number" onchange="avisoCalcular()" name="numero"
+                placeholder="Digite aqui um número de seu interesse"></input>
+            <button id="botaoCalcular" class="calcular" onclick="calcular()">Calcular</button>
+            <button class="calcular" onclick="limpar()">Limpar</button>
+        </div>
+        <div>
+            <ul id="listaId" class="lista">
+
+
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        Desenvolvido por <strong>Guilherme Araujo</strong>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.message {
+  background: rgba(24, 146, 0);
+  height: 50px;
+  max-width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+  color: white;
+  font-size: 20px;
+  margin: 10px auto;
+  display: none;
+}
+
+.cancelMessage {
+  background: rgba(255, 255, 255, 0.918);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+  font-size: 30px;
+
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+#xCancel {
+  border: solid 5px rgba(0, 0, 0, 0.2);
+  margin-left: 30px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: red;
+  text-shadow: none;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+#xCancel:hover {
+  transform: scale(1.1);
+}
+.messageShow {
+  display: flex;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/background.png);
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  gap: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+main input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  text-align: center;
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.7);
+  box-sizing: border-box;
+}
+main button {
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  width: 40%;
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.7);
+}
+main div {
+  gap: 8px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+main .clearButton {
+  background-color: crimson;
+  color: white;
+}
+main .registerButton {
+  background-color: rgb(60, 220, 20);
+}
+main .counter {
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.blockClick {
+  cursor: not-allowed;
+}
